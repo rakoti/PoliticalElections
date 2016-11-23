@@ -1,0 +1,103 @@
+package PoliticalElec;
+
+import hu.elte.txtuml.api.model.StateMachine.Initial;
+
+
+signal Opened_t;
+signal VanueClosed_t;
+signal Validating_t;
+signal InvalidVoter_t;
+signal Votes_t;
+signal ValidateVoters_t;
+signal CountingVotes_t;
+signal ReleaseResults_t;
+signal OpenedVoted_t;
+signal NextVoter;
+
+
+class Political_f {
+initial Init;
+state Ready_st;
+state AcceptVoters_st;
+state Validate_st;
+state PersonVotes_st;
+state PersonVoting_st;
+state PublishResults_st;
+state CountVotes_st;
+
+	
+    transition Initialize_tr {
+		from Init;
+		to Ready_st;
+		}	
+	
+	transition Open_tr {
+		from Ready_st;
+		to AcceptVoters_st;
+		trigger Opened_t;
+	}
+	
+	transition Close_tr{
+		from AcceptVoters_st;
+		to Ready_st;
+		trigger VanueClosed_t;
+	} 
+	
+	
+	transition StartVotings_tr {
+		from Ready_st;
+		to Validate_st;
+		trigger Validating_t;
+	}
+	
+	transition PersonNotValidVoter_tr{
+		from Validate_st;
+		to Ready_st;
+		trigger InvalidVoter_t;
+	}
+	
+	
+	transition PersonValidVoter_tr{
+		from Validate_st;
+		to PersonVotes_st;
+		trigger Votes_t;
+	}
+	
+
+	transition PersonIsVoting_tr {
+		from PersonVotes_st;
+		to PersonVoting_st;
+		trigger ValidateVoters_t;
+	}
+	transition ValidPersonVoted_tr {
+		from PersonVoting_st;
+		to AcceptVoters_st;
+		trigger Opened_t;
+	}
+	
+	transition AfterVoting_tr {
+		from PersonVotes_st;
+		to AcceptVoters_st;
+		trigger OpenedVoted_t;
+	}
+	
+	transition CountingVotes_tr {
+		from PersonVotes_st;
+		to CountVotes_st;
+		trigger CountingVotes_t;	
+	}
+	
+	transition PublishVotersResults_tr {
+		from CountVotes_st;
+		to PublishResults_st;
+		trigger ReleaseResults_t;
+	}
+	
+	transition NextVoter_st {
+		from CountVotes_st;
+		to Ready_st;
+		trigger NextVoter;
+	}
+
+}	
+

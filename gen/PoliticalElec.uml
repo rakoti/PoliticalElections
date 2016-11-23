@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_gZGUsK0cEea3WOUiKkGkBQ" name="Political_md">
+    <packageImport xmi:id="_gZ0GYK0cEea3WOUiKkGkBQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://TXTUML_STDLIB/stdlib.uml#_DE5UMHLCEeWVx4ZuxFlarQ"/>
+    </packageImport>
+    <packageImport xmi:id="_gbCOYK0cEea3WOUiKkGkBQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_gg7bAK0cEea3WOUiKkGkBQ" name="NextVoter"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_gg8CEK0cEea3WOUiKkGkBQ" name="NextVoter" signal="_gg7bAK0cEea3WOUiKkGkBQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gg8CEa0cEea3WOUiKkGkBQ" name="#NextVoter_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_gg-eUK0cEea3WOUiKkGkBQ" name="NextVoter" specification="_gg8pIK0cEea3WOUiKkGkBQ"/>
+      <ownedOperation xmi:id="_gg8pIK0cEea3WOUiKkGkBQ" name="NextVoter" isStatic="true" method="_gg-eUK0cEea3WOUiKkGkBQ">
+        <ownedParameter xmi:id="_gg93QK0cEea3WOUiKkGkBQ" name="signal" type="_gg7bAK0cEea3WOUiKkGkBQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ghCvwK0cEea3WOUiKkGkBQ" name="ValidateVoters_t"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ghCvwa0cEea3WOUiKkGkBQ" name="ValidateVoters_t" signal="_ghCvwK0cEea3WOUiKkGkBQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ghCvwq0cEea3WOUiKkGkBQ" name="#ValidateVoters_t_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ghEk8K0cEea3WOUiKkGkBQ" name="ValidateVoters_t" specification="_ghCvw60cEea3WOUiKkGkBQ"/>
+      <ownedOperation xmi:id="_ghCvw60cEea3WOUiKkGkBQ" name="ValidateVoters_t" isStatic="true" method="_ghEk8K0cEea3WOUiKkGkBQ">
+        <ownedParameter xmi:id="_ghD94K0cEea3WOUiKkGkBQ" name="signal" type="_ghCvwK0cEea3WOUiKkGkBQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ghMgwK0cEea3WOUiKkGkBQ" name="Votes_t"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ghMgwa0cEea3WOUiKkGkBQ" name="Votes_t" signal="_ghMgwK0cEea3WOUiKkGkBQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ghMgwq0cEea3WOUiKkGkBQ" name="#Votes_t_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ghOV8a0cEea3WOUiKkGkBQ" name="Votes_t" specification="_ghNH0K0cEea3WOUiKkGkBQ"/>
+      <ownedOperation xmi:id="_ghNH0K0cEea3WOUiKkGkBQ" name="Votes_t" isStatic="true" method="_ghOV8a0cEea3WOUiKkGkBQ">
+        <ownedParameter xmi:id="_ghOV8K0cEea3WOUiKkGkBQ" name="signal" type="_ghMgwK0cEea3WOUiKkGkBQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ghRZQK0cEea3WOUiKkGkBQ" name="InvalidVoter_t"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ghRZQa0cEea3WOUiKkGkBQ" name="InvalidVoter_t" signal="_ghRZQK0cEea3WOUiKkGkBQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ghRZQq0cEea3WOUiKkGkBQ" name="#InvalidVoter_t_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ghTOcK0cEea3WOUiKkGkBQ" name="InvalidVoter_t" specification="_ghRZQ60cEea3WOUiKkGkBQ"/>
+      <ownedOperation xmi:id="_ghRZQ60cEea3WOUiKkGkBQ" name="InvalidVoter_t" isStatic="true" method="_ghTOcK0cEea3WOUiKkGkBQ">
+        <ownedParameter xmi:id="_ghSnYK0cEea3WOUiKkGkBQ" name="signal" type="_ghRZQK0cEea3WOUiKkGkBQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ghZVEK0cEea3WOUiKkGkBQ" name="ReleaseResults_t"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ghZVEa0cEea3WOUiKkGkBQ" name="ReleaseResults_t" signal="_ghZVEK0cEea3WOUiKkGkBQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ghZVEq0cEea3WOUiKkGkBQ" name="#ReleaseResults_t_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ghbKQa0cEea3WOUiKkGkBQ" name="ReleaseResults_t" specification="_ghZ8IK0cEea3WOUiKkGkBQ"/>
+      <ownedOperation xmi:id="_ghZ8IK0cEea3WOUiKkGkBQ" name="ReleaseResults_t" isStatic="true" method="_ghbKQa0cEea3WOUiKkGkBQ">
+        <ownedParameter xmi:id="_ghbKQK0cEea3WOUiKkGkBQ" name="signal" type="_ghZVEK0cEea3WOUiKkGkBQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ghhQ4K0cEea3WOUiKkGkBQ" name="CountingVotes_t"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ghhQ4a0cEea3WOUiKkGkBQ" name="CountingVotes_t" signal="_ghhQ4K0cEea3WOUiKkGkBQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ghhQ4q0cEea3WOUiKkGkBQ" name="#CountingVotes_t_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ghjGEK0cEea3WOUiKkGkBQ" name="CountingVotes_t" specification="_ghh38K0cEea3WOUiKkGkBQ"/>
+      <ownedOperation xmi:id="_ghh38K0cEea3WOUiKkGkBQ" name="CountingVotes_t" isStatic="true" method="_ghjGEK0cEea3WOUiKkGkBQ">
+        <ownedParameter xmi:id="_ghifAK0cEea3WOUiKkGkBQ" name="signal" type="_ghhQ4K0cEea3WOUiKkGkBQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ghmJYK0cEea3WOUiKkGkBQ" name="Validating_t"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ghmJYa0cEea3WOUiKkGkBQ" name="Validating_t" signal="_ghmJYK0cEea3WOUiKkGkBQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ghmJYq0cEea3WOUiKkGkBQ" name="#Validating_t_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ghn-ka0cEea3WOUiKkGkBQ" name="Validating_t" specification="_ghmwcK0cEea3WOUiKkGkBQ"/>
+      <ownedOperation xmi:id="_ghmwcK0cEea3WOUiKkGkBQ" name="Validating_t" isStatic="true" method="_ghn-ka0cEea3WOUiKkGkBQ">
+        <ownedParameter xmi:id="_ghn-kK0cEea3WOUiKkGkBQ" name="signal" type="_ghmJYK0cEea3WOUiKkGkBQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ghro8K0cEea3WOUiKkGkBQ" name="Opened_t"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ghro8a0cEea3WOUiKkGkBQ" name="Opened_t" signal="_ghro8K0cEea3WOUiKkGkBQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ghro8q0cEea3WOUiKkGkBQ" name="#Opened_t_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ghteIK0cEea3WOUiKkGkBQ" name="Opened_t" specification="_ghsQAK0cEea3WOUiKkGkBQ"/>
+      <ownedOperation xmi:id="_ghsQAK0cEea3WOUiKkGkBQ" name="Opened_t" isStatic="true" method="_ghteIK0cEea3WOUiKkGkBQ">
+        <ownedParameter xmi:id="_ghs3EK0cEea3WOUiKkGkBQ" name="signal" type="_ghro8K0cEea3WOUiKkGkBQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ghwhcK0cEea3WOUiKkGkBQ" name="OpenedVoted_t"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ghwhca0cEea3WOUiKkGkBQ" name="OpenedVoted_t" signal="_ghwhcK0cEea3WOUiKkGkBQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ghwhcq0cEea3WOUiKkGkBQ" name="#OpenedVoted_t_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_gh1Z8a0cEea3WOUiKkGkBQ" name="OpenedVoted_t" specification="_ghxIgK0cEea3WOUiKkGkBQ"/>
+      <ownedOperation xmi:id="_ghxIgK0cEea3WOUiKkGkBQ" name="OpenedVoted_t" isStatic="true" method="_gh1Z8a0cEea3WOUiKkGkBQ">
+        <ownedParameter xmi:id="_gh1Z8K0cEea3WOUiKkGkBQ" name="signal" type="_ghwhcK0cEea3WOUiKkGkBQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_giKxIK0cEea3WOUiKkGkBQ" name="Political_f" classifierBehavior="_giMmUK0cEea3WOUiKkGkBQ">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_giMmUK0cEea3WOUiKkGkBQ" name="Political_f">
+        <region xmi:id="_giMmUa0cEea3WOUiKkGkBQ" name="Political_f">
+          <transition xmi:id="_giPpoK0cEea3WOUiKkGkBQ" name="Initialize_tr" source="_giNNYK0cEea3WOUiKkGkBQ" target="_giNNYa0cEea3WOUiKkGkBQ"/>
+          <transition xmi:id="_giQQsK0cEea3WOUiKkGkBQ" name="Open_tr" source="_giNNYa0cEea3WOUiKkGkBQ" target="_giN0cK0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_giQ3wK0cEea3WOUiKkGkBQ" name="Opened_t_trigger" event="_ghro8a0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <transition xmi:id="_giRe0K0cEea3WOUiKkGkBQ" name="Close_tr" source="_giN0cK0cEea3WOUiKkGkBQ" target="_giNNYa0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_giSF4K0cEea3WOUiKkGkBQ" name="null_trigger" event="_gioEIa0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <transition xmi:id="_giSF4a0cEea3WOUiKkGkBQ" name="StartVotings_tr" source="_giNNYa0cEea3WOUiKkGkBQ" target="_giN0ca0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_giSs8K0cEea3WOUiKkGkBQ" name="Validating_t_trigger" event="_ghmJYa0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <transition xmi:id="_giTUAK0cEea3WOUiKkGkBQ" name="PersonNotValidVoter_tr" source="_giN0ca0cEea3WOUiKkGkBQ" target="_giNNYa0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_giT7EK0cEea3WOUiKkGkBQ" name="InvalidVoter_t_trigger" event="_ghRZQa0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <transition xmi:id="_giT7Ea0cEea3WOUiKkGkBQ" name="PersonValidVoter_tr" source="_giN0ca0cEea3WOUiKkGkBQ" target="_giObgK0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_giUiIK0cEea3WOUiKkGkBQ" name="Votes_t_trigger" event="_ghMgwa0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <transition xmi:id="_giVJMK0cEea3WOUiKkGkBQ" name="PersonIsVoting_tr" source="_giObgK0cEea3WOUiKkGkBQ" target="_giObga0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_giVwQK0cEea3WOUiKkGkBQ" name="ValidateVoters_t_trigger" event="_ghCvwa0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <transition xmi:id="_giVwQa0cEea3WOUiKkGkBQ" name="ValidPersonVoted_tr" source="_giObga0cEea3WOUiKkGkBQ" target="_giN0cK0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_giWXUK0cEea3WOUiKkGkBQ" name="Opened_t_trigger" event="_ghro8a0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <transition xmi:id="_gib24K0cEea3WOUiKkGkBQ" name="AfterVoting_tr" source="_giObgK0cEea3WOUiKkGkBQ" target="_giN0cK0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_gicd8K0cEea3WOUiKkGkBQ" name="OpenedVoted_t_trigger" event="_ghwhca0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <transition xmi:id="_gidFAK0cEea3WOUiKkGkBQ" name="CountingVotes_tr" source="_giObgK0cEea3WOUiKkGkBQ" target="_giPCka0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_gidsEK0cEea3WOUiKkGkBQ" name="CountingVotes_t_trigger" event="_ghhQ4a0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <transition xmi:id="_gieTIK0cEea3WOUiKkGkBQ" name="PublishVotersResults_tr" source="_giPCka0cEea3WOUiKkGkBQ" target="_giPCkK0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_gifhQK0cEea3WOUiKkGkBQ" name="ReleaseResults_t_trigger" event="_ghZVEa0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <transition xmi:id="_gigIUK0cEea3WOUiKkGkBQ" name="NextVoter_st" source="_giPCka0cEea3WOUiKkGkBQ" target="_giNNYa0cEea3WOUiKkGkBQ">
+            <trigger xmi:id="_gigvYK0cEea3WOUiKkGkBQ" name="NextVoter_trigger" event="_gg8CEK0cEea3WOUiKkGkBQ"/>
+          </transition>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_giNNYK0cEea3WOUiKkGkBQ" name="Init"/>
+          <subvertex xmi:type="uml:State" xmi:id="_giNNYa0cEea3WOUiKkGkBQ" name="Ready_st"/>
+          <subvertex xmi:type="uml:State" xmi:id="_giN0cK0cEea3WOUiKkGkBQ" name="AcceptVoters_st"/>
+          <subvertex xmi:type="uml:State" xmi:id="_giN0ca0cEea3WOUiKkGkBQ" name="Validate_st"/>
+          <subvertex xmi:type="uml:State" xmi:id="_giObgK0cEea3WOUiKkGkBQ" name="PersonVotes_st"/>
+          <subvertex xmi:type="uml:State" xmi:id="_giObga0cEea3WOUiKkGkBQ" name="PersonVoting_st"/>
+          <subvertex xmi:type="uml:State" xmi:id="_giPCkK0cEea3WOUiKkGkBQ" name="PublishResults_st"/>
+          <subvertex xmi:type="uml:State" xmi:id="_giPCka0cEea3WOUiKkGkBQ" name="CountVotes_st"/>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_giKxIa0cEea3WOUiKkGkBQ" name="Political_f"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_gioEIK0cEea3WOUiKkGkBQ" name="VanueClosed_t"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_gioEIa0cEea3WOUiKkGkBQ" name="VanueClosed_t" signal="_gioEIK0cEea3WOUiKkGkBQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_giorMK0cEea3WOUiKkGkBQ" name="#VanueClosed_t_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_gip5Ua0cEea3WOUiKkGkBQ" name="VanueClosed_t" specification="_giorMa0cEea3WOUiKkGkBQ"/>
+      <ownedOperation xmi:id="_giorMa0cEea3WOUiKkGkBQ" name="VanueClosed_t" isStatic="true" method="_gip5Ua0cEea3WOUiKkGkBQ">
+        <ownedParameter xmi:id="_gip5UK0cEea3WOUiKkGkBQ" name="signal" type="_gioEIK0cEea3WOUiKkGkBQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_gbC1cK0cEea3WOUiKkGkBQ">
+      <eAnnotations xmi:id="_gbC1ca0cEea3WOUiKkGkBQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_gg9QMK0cEea3WOUiKkGkBQ" base_BehavioralFeature="_gg8pIK0cEea3WOUiKkGkBQ"/>
+  <standard:Create xmi:id="_ghDW0K0cEea3WOUiKkGkBQ" base_BehavioralFeature="_ghCvw60cEea3WOUiKkGkBQ"/>
+  <standard:Create xmi:id="_ghNH0a0cEea3WOUiKkGkBQ" base_BehavioralFeature="_ghNH0K0cEea3WOUiKkGkBQ"/>
+  <standard:Create xmi:id="_ghSAUK0cEea3WOUiKkGkBQ" base_BehavioralFeature="_ghRZQ60cEea3WOUiKkGkBQ"/>
+  <standard:Create xmi:id="_ghZ8Ia0cEea3WOUiKkGkBQ" base_BehavioralFeature="_ghZ8IK0cEea3WOUiKkGkBQ"/>
+  <standard:Create xmi:id="_ghh38a0cEea3WOUiKkGkBQ" base_BehavioralFeature="_ghh38K0cEea3WOUiKkGkBQ"/>
+  <standard:Create xmi:id="_ghnXgK0cEea3WOUiKkGkBQ" base_BehavioralFeature="_ghmwcK0cEea3WOUiKkGkBQ"/>
+  <standard:Create xmi:id="_ghsQAa0cEea3WOUiKkGkBQ" base_BehavioralFeature="_ghsQAK0cEea3WOUiKkGkBQ"/>
+  <standard:Create xmi:id="_ghxIga0cEea3WOUiKkGkBQ" base_BehavioralFeature="_ghxIgK0cEea3WOUiKkGkBQ"/>
+  <standard:Create xmi:id="_giLYMK0cEea3WOUiKkGkBQ" base_BehavioralFeature="_giKxIa0cEea3WOUiKkGkBQ"/>
+  <standard:Create xmi:id="_gipSQK0cEea3WOUiKkGkBQ" base_BehavioralFeature="_giorMa0cEea3WOUiKkGkBQ"/>
+</xmi:XMI>
